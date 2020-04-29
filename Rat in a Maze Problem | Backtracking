@@ -1,11 +1,13 @@
 
 import java.util.ArrayList;
 
+//********************************BACKTRACKING APPROACH********************************
+
 class RatProblem {
     private static ArrayList<String>paths;
     public static ArrayList<String> printPath(int[][] m, int n) {
-        // visited=;
         paths=new ArrayList<>();
+        //If starting point itself is 0
         if(m[0][0]==0){
             return paths;
         }
